@@ -15,7 +15,7 @@ export default function Home() {
 		<>
 			<Header />
 			<MainSection />
-			<SectionWrapper bgColor="bg-green-50">
+			<SectionWrapper bgColor="bg-green-50" id="about">
 				<TitleWithEnglish japanese="YOUR TEAMとは" english="ABOUT" />
 				<p className="text-sm sm:text-xl my-5 sm:max-w-5xl mx-auto leading-7 sm:leading-10">
 					<span className="font-extrabold mb-5 block">
@@ -35,7 +35,7 @@ export default function Home() {
 					</span>
 				</p>
 			</SectionWrapper>
-			<SectionWrapper>
+			<SectionWrapper id="features">
 				<TitleWithEnglish japanese="YOUR TEAMの特徴" english="FEATURES" />
 				<TwoColumnsWrapper>
 					<FeatureCard
@@ -58,7 +58,7 @@ export default function Home() {
 					/>
 				</TwoColumnsWrapper>
 			</SectionWrapper>
-			<SectionWrapper bgColor="bg-green-50">
+			<SectionWrapper bgColor="bg-green-50" id="plan">
 				<TitleWithEnglish japanese="プラン別機能一覧" english="FUNCTIONS" />
 				<div className="block sm:flex justify-between">
 					{planData.map((plan) => (
@@ -66,7 +66,7 @@ export default function Home() {
 					))}
 				</div>
 			</SectionWrapper>
-			<SectionWrapper>
+			<SectionWrapper id="voice">
 				<TitleWithEnglish japanese="お客様の声" english="VOICE" />
 				<TwoColumnsWrapper>
 					<VoiceCard
@@ -92,7 +92,7 @@ export default function Home() {
 					/>
 				</TwoColumnsWrapper>
 			</SectionWrapper>
-			<SectionWrapper>
+			<SectionWrapper id="contact">
 				<TitleWithEnglish japanese="お問い合わせ" english="CONTACT" />
 				<ContactForm />
 			</SectionWrapper>

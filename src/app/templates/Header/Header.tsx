@@ -22,20 +22,22 @@ const Header: React.FC = () => {
 			<header className="fixed z-50 w-full bg-white opacity-90 top-0">
 				<div className="flex sm:max-w-7xl mx-auto justify-between items-center px-4 sm:px-0">
 					<h1>
-						<Image
-							className="hidden sm:block"
-							src="/logo_yourteam.svg"
-							alt="ロゴ"
-							width={180}
-							height={180}
-						/>
-						<Image
-							className="sm:hidden"
-							src="/logo_yourteam.svg"
-							alt="ロゴ"
-							width={90}
-							height={180}
-						/>
+						<a href="/">
+							<Image
+								className="hidden sm:block"
+								src="/logo_yourteam.svg"
+								alt="ロゴ"
+								width={180}
+								height={180}
+							/>
+							<Image
+								className="sm:hidden"
+								src="/logo_yourteam.svg"
+								alt="ロゴ"
+								width={90}
+								height={180}
+							/>
+						</a>
 					</h1>
 
 					{/* ハンバーガーボタン（モバイル用） */}
