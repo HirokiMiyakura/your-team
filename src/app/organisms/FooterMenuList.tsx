@@ -19,10 +19,7 @@ const menuItems: FooterMenuItem[] = [
 	{ label: 'お問い合わせ', href: '#contact' },
 ];
 
-export default function FooterMenuList({
-	className = '',
-	onClick,
-}: FooterMenuListProps) {
+export default function FooterMenuList({ onClick }: FooterMenuListProps) {
 	return (
 		<>
 			{menuItems.map((item) => (
