@@ -21,7 +21,7 @@ const MainSection: React.FC = () => (
 					<br className="sm:hidden leading-9" />
 					定額制ホームページ制作サービス
 				</p>
-				<p className="text-2xl sm:text-4xl text-center font-extrabold mt-10 text-white drop-shadow-lg">
+				<p className="text-2xl sm:text-5xl text-center font-extrabold mt-10 text-white drop-shadow-lg">
 					月額
 					<span className="text-6xl sm:text-9xl font-extrabold px-2 bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
 						4,980

@@ -11,7 +11,7 @@ type FooterMenuListProps = {
 };
 
 const menuItems: FooterMenuItem[] = [
-	{ label: 'トップ', href: '/' },
+	// { label: 'トップ', href: '/' },
 	{ label: 'YOUR TEAMとは', href: '#about' },
 	{ label: 'YOUR TEAMの特徴', href: '#features' },
 	{ label: 'プラン別機能一覧', href: '#plan' },
@@ -23,7 +23,7 @@ export default function FooterMenuList({ onClick }: FooterMenuListProps) {
 	return (
 		<>
 			{menuItems.map((item) => (
-				<li key={item.href} className="border-b-2">
+				<li key={item.href} className="border-b-2 sm:border-b-0">
 					<Link
 						className="py-3 block w-full"
 						href={item.href}

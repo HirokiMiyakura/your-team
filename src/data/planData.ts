@@ -17,7 +17,8 @@ const planData: Plan[] = [
 		title: 'スタートプラン',
 		price: '4,980',
 		priceTaxIncluded: '税込5,478円',
-		description: 'ここにプランの説明文が入ります。',
+		description:
+			'シンプルなホームページが欲しい方にぴったりのプラン。最低限の機能を備えた構成で、初めてのホームページ作成をサポートします。無理なく始められる価格で、安心のサポートもご提供！',
 		pages: [
 			{ name: 'トップページ', count: '1P' },
 			{ name: 'お知らせ一覧ページ', count: '1P' },
@@ -38,7 +39,8 @@ const planData: Plan[] = [
 		title: 'ノーマルプラン',
 		price: '9,980',
 		priceTaxIncluded: '税込10,978円',
-		description: 'ここにプランの説明文が入ります。',
+		description:
+			'情報を充実させつつも、過不足なくまとめた標準プラン。追加のページや機能により、チーム紹介や試合情報などを見やすく掲載できます。成長するチームの広報に最適なプランです。',
 		pages: [
 			{ name: 'トップページ', count: '1P' },
 			{ name: 'お知らせ一覧ページ', count: '1P' },
@@ -66,7 +68,8 @@ const planData: Plan[] = [
 		title: 'プレミアプラン',
 		price: '19,980',
 		priceTaxIncluded: '税込21,978円',
-		description: 'ここにプランの説明文が入ります。',
+		description:
+			'充実のページ構成と、綿密なサポートを提供するプレミアプラン。多機能なサイトでチームの活動を一貫してアピールし、ファンや保護者にさらなる信頼を得られます。企業スポンサーとの連携にも最適です。',
 		pages: [
 			{ name: 'トップページ', count: '1P' },
 			{ name: 'お知らせ一覧ページ', count: '1P' },

@@ -8,6 +8,7 @@ import Footer from './templates/Footer';
 import TwoColumnsWrapper from './molecules/TwoColumnsWrapper';
 import MainSection from './organisms/MainSection';
 import VoiceCard from './molecules/VoiceCard';
+import ContactForm from './organisms/ContactForm';
 
 export default function Home() {
 	return (
@@ -39,19 +40,19 @@ export default function Home() {
 				<TwoColumnsWrapper>
 					<FeatureCard
 						title="圧倒的サポート"
-						imageSrc="/logo_yourteam.svg"
+						imageSrc="/f1.jpg"
 						imageAlt="特徴1"
 						description="「チームの成長を後押しするパートナーとして」。パソコンに不慣れな方でも、わかりやすい言葉と手厚い対応でお手伝いします。チームの運営に安心をプラス。"
 					/>
 					<FeatureCard
 						title="過不足のない充実性能"
-						imageSrc="/logo_yourteam.svg"
+						imageSrc="/f2.jpg"
 						imageAlt="特徴1"
 						description="「必要な機能を無駄なく、しっかりと」。運営に役立つ機能を厳選。シンプルさと充実性を兼ね備えたホームページが、チーム運営をしっかり支えます。"
 					/>
 					<FeatureCard
 						title="洗練されたデザイン"
-						imageSrc="/logo_yourteam.svg"
+						imageSrc="/f3.jpg"
 						imageAlt="特徴1"
 						description="「チームの魅力を引き出すデザイン」。シンプルながら目を引くデザインで、チームの魅力を最大限に発信。応援者や新メンバーにも一目で伝わるホームページを提供します。"
 					/>
@@ -70,26 +71,30 @@ export default function Home() {
 				<TwoColumnsWrapper>
 					<VoiceCard
 						title="迅速で的確な対応が心強い！"
-						imageSrc="/logo_yourteam.svg"
+						imageSrc="/v1.jpg"
 						imageAlt="特徴1"
 						name="Y・A様"
 						description="更新の方法も丁寧に教えてもらえて、すぐに運営できました。チームのメンバーや保護者の反応も良く、大満足です。"
 					/>
 					<VoiceCard
 						title="追加料金がないので安心できました！"
-						imageSrc="/logo_yourteam.svg"
+						imageSrc="/v2.jpg"
 						imageAlt="特徴1"
 						name="Y・A様"
 						description="他社では予想外の追加費用がかかることが多かったのですが、YOUR TEAMは見積もりどおりの価格で対応していただきました。"
 					/>
 					<VoiceCard
 						title="新しい仲間が増えました！"
-						imageSrc="/logo_yourteam.svg"
+						imageSrc="/v3.jpg"
 						imageAlt="特徴1"
 						name="Y・A様"
 						description="新しいウェブサイトのおかげでチームの活動が多くの方に届くようになり、地域の応援者が増えました。今後もこの調子で盛り上がりたいと思います！"
 					/>
 				</TwoColumnsWrapper>
+			</SectionWrapper>
+			<SectionWrapper>
+				<TitleWithEnglish japanese="お問い合わせ" english="CONTACT" />
+				<ContactForm />
 			</SectionWrapper>
 			<Footer />
 		</>

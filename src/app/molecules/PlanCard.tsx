@@ -16,7 +16,7 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan }) => (
 			<span className={`px-1 text-5xl ${plan.textColor}`}>{plan.price}</span>円
 		</p>
 		<p className="px-4 text-center">（{plan.priceTaxIncluded}）</p>
-		<p className="text-sm sm:text-1xl p-4">{plan.description}</p>
+		<p className="text-sm sm:text-1xl p-4 leading-7">{plan.description}</p>
 		<div className="p-4">
 			<h3 className="font-extrabold border-b-2 pb-2 mb-4">搭載ページ</h3>
 			<ul className="text-gray-800">
