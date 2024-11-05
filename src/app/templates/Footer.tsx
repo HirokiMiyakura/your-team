@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import FooterMenuList from '../organisms/FooterMenuList';
+import Link from 'next/link';
 
 const Footer: React.FC = () => (
 	<footer className="block sm:flex sm:max-w-7xl mx-auto justify-between px-4 py-5 my-20 items-center">
 		<h1 className="text-center mx-auto">
-			<a href="/">
+			<Link href="/">
 				<Image
 					className="text-center mx-auto"
 					src="/logo_yourteam.svg"
@@ -12,7 +13,7 @@ const Footer: React.FC = () => (
 					width={180}
 					height={180}
 				/>
-			</a>
+			</Link>
 		</h1>
 		<nav>
 			<ul className="block sm:flex gap-x-8 list-unstyled">
