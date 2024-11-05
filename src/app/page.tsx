@@ -1,101 +1,97 @@
-import Image from "next/image";
+import SectionWrapper from './molecules/SectionWrapper';
+import TitleWithEnglish from './atoms/TitleWithEnglish';
+import Header from './templates/Header/Header';
+import FeatureCard from './molecules/FeatureCard';
+import PlanCard from './molecules/PlanCard';
+import planData from '@/data/planData';
+import Footer from './templates/Footer';
+import TwoColumnsWrapper from './molecules/TwoColumnsWrapper';
+import MainSection from './organisms/MainSection';
+import VoiceCard from './molecules/VoiceCard';
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+	return (
+		<>
+			<Header />
+			<MainSection />
+			<SectionWrapper bgColor="bg-green-50">
+				<TitleWithEnglish japanese="YOUR TEAMとは" english="ABOUT" />
+				<p className="text-sm sm:text-xl my-5 sm:max-w-5xl mx-auto leading-7 sm:leading-10">
+					<span className="font-extrabold mb-5 block">
+						サッカーチーム専用のホームページを、誰もが気軽に
+					</span>
+					「YOUR
+					TEAM」は、サッカークラブのための特別なホームページ制作サービスです。
+					<br />
+					<span className="font-extrabold">初期費用無料、月額5,000円から</span>
+					というシンプルな料金プランで、クラブ運営に無理なく導入いただけます。
+					<br />
+					運営資金に限りがあるクラブの方々でも、チームの紹介や活動内容、新規メンバー募集に活用できる、信頼のサービスを提供いたします。あなたのチームに合ったホームページで、地域のサポーターや新しい仲間とつながりましょう。
+					<br />
+					<span className="font-extrabold block mt-5">
+						クラブの夢を、一緒にカタチに。YOUR
+						TEAMが、あなたのチームを応援します。
+					</span>
+				</p>
+			</SectionWrapper>
+			<SectionWrapper>
+				<TitleWithEnglish japanese="YOUR TEAMの特徴" english="FEATURES" />
+				<TwoColumnsWrapper>
+					<FeatureCard
+						title="圧倒的サポート"
+						imageSrc="/logo_yourteam.svg"
+						imageAlt="特徴1"
+						description="「チームの成長を後押しするパートナーとして」。パソコンに不慣れな方でも、わかりやすい言葉と手厚い対応でお手伝いします。チームの運営に安心をプラス。"
+					/>
+					<FeatureCard
+						title="過不足のない充実性能"
+						imageSrc="/logo_yourteam.svg"
+						imageAlt="特徴1"
+						description="「必要な機能を無駄なく、しっかりと」。運営に役立つ機能を厳選。シンプルさと充実性を兼ね備えたホームページが、チーム運営をしっかり支えます。"
+					/>
+					<FeatureCard
+						title="洗練されたデザイン"
+						imageSrc="/logo_yourteam.svg"
+						imageAlt="特徴1"
+						description="「チームの魅力を引き出すデザイン」。シンプルながら目を引くデザインで、チームの魅力を最大限に発信。応援者や新メンバーにも一目で伝わるホームページを提供します。"
+					/>
+				</TwoColumnsWrapper>
+			</SectionWrapper>
+			<SectionWrapper bgColor="bg-green-50">
+				<TitleWithEnglish japanese="プラン別機能一覧" english="FUNCTIONS" />
+				<div className="block sm:flex justify-between">
+					{planData.map((plan) => (
+						<PlanCard key={plan.title} plan={plan} />
+					))}
+				</div>
+			</SectionWrapper>
+			<SectionWrapper>
+				<TitleWithEnglish japanese="お客様の声" english="VOICE" />
+				<TwoColumnsWrapper>
+					<VoiceCard
+						title="迅速で的確な対応が心強い！"
+						imageSrc="/logo_yourteam.svg"
+						imageAlt="特徴1"
+						name="Y・A様"
+						description="更新の方法も丁寧に教えてもらえて、すぐに運営できました。チームのメンバーや保護者の反応も良く、大満足です。"
+					/>
+					<VoiceCard
+						title="追加料金がないので安心できました！"
+						imageSrc="/logo_yourteam.svg"
+						imageAlt="特徴1"
+						name="Y・A様"
+						description="他社では予想外の追加費用がかかることが多かったのですが、YOUR TEAMは見積もりどおりの価格で対応していただきました。"
+					/>
+					<VoiceCard
+						title="新しい仲間が増えました！"
+						imageSrc="/logo_yourteam.svg"
+						imageAlt="特徴1"
+						name="Y・A様"
+						description="新しいウェブサイトのおかげでチームの活動が多くの方に届くようになり、地域の応援者が増えました。今後もこの調子で盛り上がりたいと思います！"
+					/>
+				</TwoColumnsWrapper>
+			</SectionWrapper>
+			<Footer />
+		</>
+	);
 }
