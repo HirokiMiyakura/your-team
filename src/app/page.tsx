@@ -80,14 +80,14 @@ export default function Home() {
 						title="追加料金がないので安心できました！"
 						imageSrc="/v2.jpg"
 						imageAlt="特徴1"
-						name="Y・A様"
+						name="H・M様"
 						description="他社では予想外の追加費用がかかることが多かったのですが、YOUR TEAMは見積もりどおりの価格で対応していただきました。"
 					/>
 					<VoiceCard
 						title="新しい仲間が増えました！"
 						imageSrc="/v3.jpg"
 						imageAlt="特徴1"
-						name="Y・A様"
+						name="A・A様"
 						description="新しいウェブサイトのおかげでチームの活動が多くの方に届くようになり、地域の応援者が増えました。今後もこの調子で盛り上がりたいと思います！"
 					/>
 				</TwoColumnsWrapper>
